@@ -33,8 +33,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#    define RGBLIGHT_EFFECT_TWINKLE
 #endif
 
-#define RGBLIGHT_DEFAULT_VAL 150
-#define RGBLIGHT_LIMIT_VAL 150
+#define RGBLIGHT_DEFAULT_VAL 80
+#define RGBLIGHT_LIMIT_VAL   80
 
 #define HSV_WEAK_GOLD      18, 180, 180
 #define HSV_WEAK_BLUE      85, 180, 180

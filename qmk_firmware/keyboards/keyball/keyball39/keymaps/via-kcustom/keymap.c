@@ -25,15 +25,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //     TD_E_TAB,
 // };
 
-// Tap Dance definitions
+// Tap Dance definitions - can be assign key code via remap, but tap dance delay is significant
 // tap_dance_action_t tap_dance_actions[] = {
 //   [TD_E_TAB] = ACTION_TAP_DANCE_DOUBLE(KC_E, KC_TAB),
 // };
 
-const uint16_t PROGMEM combo1[] = {KC_J, KC_K, COMBO_END};
-combo_t key_combos[] = {
-    COMBO(combo1, KC_TAB),
-};
+// combo - can be used with remap, but combo's delay is signficant and pressing keys at the same time was bothering
+// const uint16_t PROGMEM combo1[] = {KC_J, KC_K, COMBO_END};
+// combo_t key_combos[] = {
+//     COMBO(combo1, KC_TAB),
+// };
 
 // clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -75,8 +76,28 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // clang-format on
 
 layer_state_t layer_state_set_user(layer_state_t state) {
-// Auto enable scroll mode when the highest layer is 3
+    // Auto enable scroll mode when the highest layer is 3
     keyball_set_scroll_mode(get_highest_layer(state) == 3);
+    
+    uint8_t layer = biton32(state);
+    switch (layer) {
+        case 0:
+            rgblight_sethsv(HSV_GOLD);
+            break;
+        case 1:
+            rgblight_sethsv(HSV_CIAN);
+            break;
+        case 2:
+            rgblight_sethsv(HSV_WHITE);
+            break;
+        case 3:
+            rgblight_sethsv(HSV_BLUE);
+            break;
+        case 4:
+            rgblight_sethsv(HSV_GREEN);
+            break;
+    }
+
     return state;
 }
 

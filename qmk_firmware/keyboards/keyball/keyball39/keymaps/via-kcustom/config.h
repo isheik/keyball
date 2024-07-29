@@ -37,12 +37,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGBLIGHT_DEFAULT_VAL 40
 #define RGBLIGHT_LIMIT_VAL   40
 
-#define HSV_WEAK_GOLD      18, 180, 180
-#define HSV_WEAK_BLUE      85, 180, 180
-#define HSV_WEAK_GREEN     64, 180, 180
-#define HSV_WEAK_CYAN      42, 180, 180
-#define HSV_WEAK_TURQUOISE 123, 90, 112
-
 #define TAP_CODE_DELAY 5
 
 #define POINTING_DEVICE_AUTO_MOUSE_ENABLE

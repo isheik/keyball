@@ -33,6 +33,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#    define RGBLIGHT_EFFECT_TWINKLE
 #endif
 
+#define RGBLIGHT_LAYERS_RETAIN_VAL
 #define RGBLIGHT_DEFAULT_VAL 80
 #define RGBLIGHT_LIMIT_VAL   80
 

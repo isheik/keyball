@@ -22,11 +22,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // Tap Dance declarations
 enum {
-    TD_ESC_CAPS,
+    TD_F_TAB,
 };
 
 // Tap Dance definitions
 tap_dance_action_t tap_dance_actions[] = {
+  [TD_F_TAB] = ACTION_TAP_DANCE_DOUBLE(KC_F, KC_TAB),
     // Tap once for Escape, twice for Caps Lock
  //   [TD_ESC_CAPS] = ACTION_TAP_DANCE_DOUBLE(KC_ESC, KC_CAPS),
 };

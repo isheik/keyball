@@ -34,8 +34,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #endif
 
 #define RGBLIGHT_LAYERS_RETAIN_VAL
-#define RGBLIGHT_DEFAULT_VAL 80
-#define RGBLIGHT_LIMIT_VAL   80
+#define RGBLIGHT_DEFAULT_VAL 40
+#define RGBLIGHT_LIMIT_VAL   40
 
 #define HSV_WEAK_GOLD      18, 180, 180
 #define HSV_WEAK_BLUE      85, 180, 180

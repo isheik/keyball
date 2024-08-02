@@ -81,8 +81,6 @@ layer_state_t layer_state_set_user(layer_state_t state) {
     
     uint8_t layer = biton32(state);
     switch (layer) {
-        case 0:
-            break;
         case 1:
             rgblight_sethsv(HSV_SPRINGGREEN);
             break;
@@ -94,6 +92,9 @@ layer_state_t layer_state_set_user(layer_state_t state) {
             break;
         case 4:
             rgblight_sethsv(HSV_CHARTREUSE);
+            break;
+        default:
+            rgblight_sethsv(HSV_OFF);
             break;
     }
 

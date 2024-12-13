@@ -44,7 +44,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define AUTO_MOUSE_TIME 500
 #define AUTO_MOUSE_LAYER_KEEP_TIME 10000
 
-#define DYNAMIC_KEYMAP_LAYER_COUNT 5
+#define DYNAMIC_KEYMAP_LAYER_COUNT 6
+
+#define USB_SUSPEND_WAKEUP_DELAY 200
 
 #define TAPPING_TERM 230
 
